@@ -12,12 +12,12 @@ class MyCarrotScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
-        title: Text("나의 당근"),
+        title: const Text("나의 당근"),
         actions: [
           IconButton(
-              onPressed: () {}, icon: Icon(CupertinoIcons.gear_alt_fill)),
+              onPressed: () {}, icon: const Icon(CupertinoIcons.gear_alt_fill)),
         ],
+        iconTheme: IconThemeData(color: Colors.black),
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(0.5),
           child: Divider(
